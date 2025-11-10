@@ -1,0 +1,113 @@
+/* ====== Estilos da tela de login - Projeto Desenvolvimento Web ====== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  /* Remove margens e espaçamentos padrão e define a fonte base */
+}
+
+body {
+  background-color: #1e73be; /* azul de fundo da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ocupa toda a altura da janela */
+}
+
+.container {
+  background-color: #ffffff; /* fundo branco do card */
+  border-radius: 12px; /* cantos arredondados */
+  padding: 40px 50px; /* espaçamento interno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra leve para destaque */
+  text-align: center; /* centraliza o conteúdo */
+  width: 360px; /* largura fixa do card */
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* organiza a logo e o texto verticalmente */
+}
+
+.logo img {
+  width: 60px;
+  margin-bottom: 8px;
+  /* define o tamanho da imagem da logo */
+}
+
+.logo h1 {
+  font-size: 22px;
+  color: #1e73be;
+  font-weight: 700;
+  /* título principal da logo */
+}
+
+.logo h1 span {
+  color: #1e73be;
+  /* mantém o mesmo tom de azul no destaque */
+}
+
+.title {
+  font-size: 20px;
+  color: #1e73be;
+  margin-top: 20px;
+  font-weight: bold;
+  /* título "Tela de Login" */
+}
+
+.subtitle {
+  color: #444;
+  margin-bottom: 25px;
+  font-size: 15px;
+  /* subtítulo descritivo */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* organiza os campos de entrada um abaixo do outro */
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  /* estilo dos campos de e-mail e senha */
+}
+
+button {
+  background-color: #facc15; /* amarelo principal */
+  color: #222; /* texto escuro */
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  /* botão principal com efeito de transição */
+}
+
+button:hover {
+  background-color: #eab308;
+  /* tom de amarelo mais escuro no hover */
+}
+
+.forgot {
+  display: block;
+  margin-top: 15px;
+  color: #1e73be;
+  text-decoration: none;
+  font-size: 14px;
+  /* link para "Esqueceu sua senha?" */
+}
+
+.forgot:hover {
+  text-decoration: underline;
+  /* sublinha o link quando o usuário passa o mouse */
+}

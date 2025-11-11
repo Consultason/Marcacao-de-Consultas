@@ -1,0 +1,73 @@
+/* Estilo do corpo da página */
+body{
+  background:#1f6feb; /* Fundo azul */
+  font-family: Arial, sans-serif; /* Fonte do texto */
+  display:flex; /* Usando flexbox para alinhar itens */
+  flex-direction: column; /* Coloca tudo em coluna */
+  align-items:center; /* Centraliza horizontalmente */
+  margin:0; /* Remove margens padrão do navegador */
+  min-height:100vh; /* Faz o fundo ocupar a tela toda */
+}
+
+/* Área para a logo no topo */
+.header-logo {
+  width: 100%; /* Largura total */
+  height: 100px; /* Altura da barra */
+  background-color: #f1f1f1; /* Cor cinza clara */
+  display: flex; /* Alinha texto dentro */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  border-bottom: 1px solid #ccc; /* Linha embaixo */
+  font-size: 14px; /* Tamanho do texto */
+  color: #666; /* Cor do texto */
+}
+
+/* Caixa branca do formulário */
+.container{
+  background:#fff; /* Fundo branco */
+  width:350px; /* Largura fixa */
+  padding:20px; /* Espaço interno */
+  border-radius:10px; /* Bordas arredondadas */
+  box-shadow:0 0 10px rgba(0,0,0,0.2); /* Sombra */
+  margin-top:50px; /* Espaço embaixo da logo */
+}
+
+/* Título centralizado */
+h2{
+  text-align:center;
+}
+
+/* Texto acima dos campos */
+label{
+  font-size:14px;
+  display:block; /* Fica sozinho na linha */
+  margin-bottom:4px;
+}
+
+/* Configuração dos campos de entrada */
+input,select{
+  width:100%; /* Ocupa toda a largura */
+  padding:8px;
+  margin-bottom:10px; /* Espaço entre inputs */
+  border-radius:5px; /* Bordas arredondadas */
+  border:1px solid #ccc; /* Bordas cinza */
+}
+
+/* Estilo do botão */
+button{
+  width:100%;
+  background:#ffca28; /* Amarelo chamativo */
+  border:none; /* Sem borda */
+  padding:10px;
+  font-size:16px; /* Texto maior */
+  font-weight:bold; /* Texto em negrito */
+  border-radius:5px; /* Arredondado */
+  cursor:pointer; /* Mãozinha quando passa o mouse */
+}
+
+/* Texto vermelho dos erros */
+.erro{
+  color:red;
+  font-size:12px;
+  margin-bottom:6px;
+}

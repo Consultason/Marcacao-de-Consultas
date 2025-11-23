@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcação de Consultas</title>
+    <link rel="stylesheet" href="marcação.css">
+</head>
+<body>
+    <header>
+        <h1>Marcação de Consultas</h1>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Agendar nova consulta</h2>
+            <form action="#" method="post">
+               
+                <div class="form-group">
+                    <label for="especialidade">Especialidade:</label>
+                    <select id="especialidade" name="especialidade" required>
+                        <option value="">Selecione a especialidade</option>
+                        <option value="cardiologia">Cardiologia</option>
+                        <option value="dermatologia">Dermatologia</option>
+                        <option value="odontologia">Odontologia</option>
+                        <option value="ortopedia">Ortopedia</option>
+                        <option value="pediatria">Pediatria</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="data-consulta">Data:</label>
+                    <input type="date" id="data-consulta" name="data-consulta" required>
+                </div>
+                <div class="form-group">
+                    <label for="hora-consulta">Hora:</label>
+                    <input type="time" id="hora-consulta" name="hora-consulta" required>
+                </div>
+                <div class="form-group">
+                    <label for="observacoes">Observações:</label>
+                    <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+                </div>
+                <button type="submit">Agendar Consulta</button>
+            </form>
+        </section>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Clinica Bem Nordeste</p>
+    </footer>
+</body>
+</html>

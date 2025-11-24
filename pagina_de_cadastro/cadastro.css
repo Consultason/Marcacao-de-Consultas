@@ -9,27 +9,36 @@ body{
   min-height:100vh; /* Faz o fundo ocupar a tela toda */
 }
 
-/* Área para a logo no topo */
-.header-logo {
-  width: 10px; /* Largura total */
-  height: 5px; /* Altura da barra */
-  background-color: #f1f1f1; /* Cor cinza clara */
-  display: flex; /* Alinha texto dentro */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  border-bottom: 1px solid #ccc; /* Linha embaixo */
-  font-size: 14px; /* Tamanho do texto */
-  color: #666; /* Cor do texto */
+/* Área para a logo */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* organiza a logo e o texto verticalmente */
+}
+
+.logo img {
+  width: 350px;
+  margin-bottom: 20px;
+  /* define o tamanho da imagem da logo */
+}
+
+.logo h1 {
+  font-size: 22px;
+  color: #1e73be;
+  align-items: center;
+  font-weight: 700;
+  /* título principal da logo */
 }
 
 /* Caixa branca do formulário */
 .container{
-  background:#fff; /* Fundo branco */
-  width:350px; /* Largura fixa */
-  padding:20px; /* Espaço interno */
-  border-radius:10px; /* Bordas arredondadas */
-  box-shadow:0 0 10px rgba(0,0,0,0.2); /* Sombra */
-  margin-top:50px; /* Espaço embaixo da logo */
+  background-color: #ffffff; /* fundo branco do card */
+  border-radius: 50px; /* cantos arredondados */
+  padding: 40px 50px; /* espaçamento interno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra leve para destaque */
+  text-align: center; /* centraliza o conteúdo */
+  width: 500px; /* largura fixa do card */
 }
 
 /* Título centralizado */

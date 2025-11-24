@@ -45,10 +45,6 @@ body {
   /* título principal da logo */
 }
 
-.logo h1 span {
-  color: #1e73be;
-  /* mantém o mesmo tom de azul no destaque */
-}
 
 .title {
   font-size: 20px;

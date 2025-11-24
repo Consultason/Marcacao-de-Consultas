@@ -1,8 +1,8 @@
 <?php
 //  login SEM banco de dados
 
-$email_correto = ["admin@teste.com", "joelhenrique519@gmail.com"];
-$senha_correta = ["123456", "joel519"];
+$email_correto = "admin@teste.com";
+$senha_correta = "123456";
 
 $email = $_POST["email"] ?? "";
 $senha = $_POST["senha"] ?? "";

@@ -33,19 +33,30 @@
       
       <p class="subtitle">Marque suas consultas médicas</p>
       <!-- subtítulo -->
-      
-      <form action="login.php" method="POST" id="formLogin">
+
+
+      <!--formulário de login utilizando js e php -->
+      <form action="login.php" method="POST" id="formLogin"> 
+    <!-- Formulário que envia os dados para o arquivo login.php usando o método POST -->
+
     <input type="email" name="email" placeholder="E-mail" required>
+    <!-- Campo de entrada para o e-mail. O atributo "required" impede envio sem preencher -->
+
     <input type="password" name="senha" placeholder="Senha" required>
-    
+    <!-- Campo de senha. O navegador oculta os caracteres digitados -->
+
     <button type="submit">Continuar</button>
+    <!-- Botão que envia o formulário para o servidor -->
+
     <button type="button" onclick="window.location.href='../pagina_de_cadastro/cadastro.html'">Criar conta</button>
+    <!-- Botão que NÃO envia o formulário; apenas redireciona o usuário para a página de cadastro -->
 
     <p id="erro" style="color:red; margin-top:10px;"></p>
+    <!-- Parágrafo usado para exibir mensagens de erro (via JavaScript ou PHP) -->
 </form>
 
-<script src="login.js"></script>
-
+<script src="login.js"></script> 
+<!-- Importa o arquivo JavaScript login.js, que contém as funções e validações do login -->
 
       <a href="#" class="forgot">Esqueceu sua senha?</a>
       <!-- link para recuperação de senha -->

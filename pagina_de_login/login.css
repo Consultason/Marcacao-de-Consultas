@@ -11,6 +11,7 @@
 body {
   background-color: #1e73be; /* azul de fundo da tela */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh; /* ocupa toda a altura da janela */
@@ -23,6 +24,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra leve para destaque */
   text-align: center; /* centraliza o conteúdo */
   width: 500px; /* largura fixa do card */
+  position: relative
 }
 
 .logo {
@@ -106,4 +108,13 @@ button:hover {
 .forgot:hover {
   text-decoration: underline;
   /* sublinha o link quando o usuário passa o mouse */
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 30px;
 }

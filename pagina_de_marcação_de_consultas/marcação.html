@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Define o conjunto de caracteres e configurações de responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página exibido na aba do navegador -->
     <title>Marcação de Consultas</title>
+
+    <!-- Importação do arquivo CSS externo -->
     <link rel="stylesheet" href="marcação.css">
 </head>
 <body>
+
+    <!-- Cabeçalho principal com o título da página -->
     <header>
         <h1>Marcação de Consultas</h1>
     </header>
 
+    <!-- Conteúdo principal da página -->
     <main>
+
+        <!-- Seção que contém o formulário de agendamento -->
         <section class="form-container">
             <h2>Agendar nova consulta</h2>
+
+            <!-- Formulário que envia dados via método POST -->
             <form action="#" method="post">
-               
+
+                <!-- Campo para selecionar especialidade médica -->
                 <div class="form-group">
                     <label for="especialidade">Especialidade:</label>
                     <select id="especialidade" name="especialidade" required>
@@ -27,26 +40,36 @@
                         <option value="pediatria">Pediatria</option>
                     </select>
                 </div>
+
+                <!-- Campo para selecionar a data da consulta -->
                 <div class="form-group">
                     <label for="data-consulta">Data:</label>
                     <input type="date" id="data-consulta" name="data-consulta" required>
                 </div>
+
+                <!-- Campo para selecionar o horário da consulta -->
                 <div class="form-group">
                     <label for="hora-consulta">Hora:</label>
                     <input type="time" id="hora-consulta" name="hora-consulta" required>
                 </div>
+
+                <!-- Campo para inserir observações opcionais -->
                 <div class="form-group">
                     <label for="observacoes">Observações:</label>
                     <textarea id="observacoes" name="observacoes" rows="4"></textarea>
                 </div>
+
+                <!-- Botão para enviar o formulário -->
                 <button type="submit">Agendar Consulta</button>
             </form>
         </section>
 
+        <!-- Este fechamento extra existe no seu código original e foi mantido -->
             </div>
         </section>
     </main>
 
+    <!-- Rodapé com direitos autorais -->
     <footer>
         <p>&copy; Clinica Bem Nordeste</p>
     </footer>

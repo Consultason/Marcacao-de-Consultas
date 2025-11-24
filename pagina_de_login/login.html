@@ -20,36 +20,32 @@
     <!-- Contêiner principal para centralizar o conteúdo na tela -->
     
     <div class="login-box">
-      <!-- Caixa que contém o formulário de login e informações visuais -->
+      <!-- Caixa que contém o formulário -->
       
       <div class="logo">
-        <!-- logotipo e o nome da clínica -->
+        <!-- logotipo e o slogan da clinica -->
         <img src="logotipo.png" alt="Logotipo da Clínica BemNordeste">
         <h1>Cuidando da sua saúde com o calor e a força do Nordeste</h1>
       </div>
 
       <h2 class="title">Fazer login</h2>
-      <!-- título principal da página de login -->
+      <!-- título principal -->
       
       <p class="subtitle">Marque suas consultas médicas</p>
-      <!-- subtítulo com uma breve descrição ou incentivo -->
+      <!-- subtítulo -->
       
-      <form>
-        <!-- início do formulário de login -->
-        
-        <input type="email" placeholder="E-mail" required>
-        <!-- campo de entrada para o e-mail do usuário -->
-        
-        <input type="password" placeholder="Senha" required>
-        <!-- campo de entrada para a senha do usuário -->
-        
-        <button type="submit"  onclick="window.location.href='../pagina_de_marcação_de_consultas/marcação.html'">Continuar</button>
-        <!-- botão para enviar o formulário e direcionar a pagina de marcação de consultas -->
+      <form action="login.php" method="POST" id="formLogin">
+    <input type="email" name="email" placeholder="E-mail" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+    
+    <button type="submit">Continuar</button>
+    <button type="button" onclick="window.location.href='../pagina_de_cadastro/cadastro.html'">Criar conta</button>
 
-        <button type="button" onclick="window.location.href='../pagina_de_cadastro/cadastro.html'">Criar conta</button>
-      <!-- botão feito para redirecionar o usuário para a página de cadastro -->
+    <p id="erro" style="color:red; margin-top:10px;"></p>
+</form>
 
-      </form>
+<script src="login.js"></script>
+
 
       <a href="#" class="forgot">Esqueceu sua senha?</a>
       <!-- link para recuperação de senha -->

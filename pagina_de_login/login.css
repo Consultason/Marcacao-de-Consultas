@@ -18,11 +18,11 @@ body {
 
 .container {
   background-color: #ffffff; /* fundo branco do card */
-  border-radius: 12px; /* cantos arredondados */
+  border-radius: 50px; /* cantos arredondados */
   padding: 40px 50px; /* espaçamento interno */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra leve para destaque */
   text-align: center; /* centraliza o conteúdo */
-  width: 360px; /* largura fixa do card */
+  width: 500px; /* largura fixa do card */
 }
 
 .logo {
@@ -33,8 +33,8 @@ body {
 }
 
 .logo img {
-  width: 60px;
-  margin-bottom: 8px;
+  width: 350px;
+  margin-bottom: 20px;
   /* define o tamanho da imagem da logo */
 }
 

@@ -11,8 +11,8 @@ body{
 
 /* Área para a logo no topo */
 .header-logo {
-  width: 100%; /* Largura total */
-  height: 100px; /* Altura da barra */
+  width: 10px; /* Largura total */
+  height: 5px; /* Altura da barra */
   background-color: #f1f1f1; /* Cor cinza clara */
   display: flex; /* Alinha texto dentro */
   justify-content: center; /* Centraliza horizontalmente */

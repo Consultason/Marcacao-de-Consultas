@@ -61,17 +61,31 @@
                     <textarea id="observacoes" name="observacoes" rows="4"></textarea>
                 </div>
 
-                <!-- Botão para enviar o formulário -->
-                <button type="submit">Agendar Consulta</button>
+                <!-- Checkbox oculto que controla o modal -->
+<input type="checkbox" id="toggleModal" hidden>
+
+<!-- SEU botão adaptado para abrir o modal -->
+<label for="toggleModal" class="btn-abrir">Agendar Consulta</label>
+
+<!-- Modal -->
+<div class="modal">
+    <div class="modal-content">
+        <h2>Sua consulta foi agendada com sucesso!</h2>
+        <p>Em breve você receberá um e-mail com todas as informações do agendamento.</p>
+
+        <!-- Botão de fechar -->
+        <label for="toggleModal" class="fechar">Fechar</label>
+    </div>
+</div>
+
+
             </form>
         </section>
-
-        <!-- Este fechamento extra existe no seu código original e foi mantido -->
             </div>
         </section>
     </main>
 
-    <!-- Rodapé com direitos autorais -->
+    <!-- Rodapé -->
     <footer>
         <p>&copy; Clinica BemNordeste</p>
     </footer>

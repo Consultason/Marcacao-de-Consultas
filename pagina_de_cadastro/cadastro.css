@@ -42,7 +42,7 @@ body{
 }
 
 /* Título centralizado */
-h2{
+h2{color: #1e73be;
   text-align:center;
 }
 

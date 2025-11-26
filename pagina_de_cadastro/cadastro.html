@@ -23,10 +23,10 @@
   <h2>Cadastro de Pacientes</h2> <!-- Título do formulário -->
 
   <!-- Formulário onde o usuário digita os dados -->
-  <form id="form">
+  <form id="form" action="cadastrar.php" method="POST">
 
     <!-- Campo Nome com mensagem de erro -->
-    <label>Nome*</label> <!-- * significa obrigatório -->
+    <label>Nome completo*</label> <!-- * significa obrigatório -->
     <input type="text" id="nome" required> <!-- required = não pode estar vazio -->
     <div id="erroNome" class="erro"></div> <!-- Aqui aparece o erro do nome -->
 
@@ -44,6 +44,10 @@
     <label>Telefone*</label>
     <input type="text" id="tel" required>
     <div id="erroTel" class="erro"></div>
+
+    <label>Senha*</label> <!-- * significa obrigatório -->
+    <input type="password" id="senha" required> <!-- required = não pode estar vazio -->
+    <div id="erroSenha" class="erro"></div> <!-- Aqui aparece o erro da senha -->
 
     <!-- Botão que envia o formulário e direciona o usuario para a página de login -->
 <button type="submit" onclick="window.location.href='../pagina_de_login/login.html'">Cadastrar</button>

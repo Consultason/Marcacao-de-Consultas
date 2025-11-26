@@ -3,17 +3,17 @@ function marcarConsulta() {
 }
 
 function verConsultas() {
-    window.location.href = "ver_consultas.php";
+    window.location.href = "consultas.php";
 }
 
 function editarCadastro() {
-    window.location.href = "editar_cadastro.php";
+    window.location.href = "editar.php";
 }
 
 function voltarInicio() {
     window.location.href = "../index.html";
 }
 
-function logoff() {
+function logout() {
     window.location.href = "logout.php";
 }

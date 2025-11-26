@@ -1,0 +1,75 @@
+/* Estilos da tela de dashboard - baseado no login.css */
+
+/* Reset e configuração geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #1e73be; /* Fundo azul igual ao login */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CONTÊINER PRINCIPAL */
+.menu-box {
+  background-color: #ffffff; /* Card branco igual ao login */
+  border-radius: 40px;        /* Arredondamento semelhante */
+  padding: 40px 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+  margin-top: 70px;
+}
+
+/* TÍTULO DA PÁGINA */
+header h1 {
+  margin-top: 40px;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* BOTÕES DO MENU */
+.menu-box button {
+  background-color: #facc15; /* amarelo principal */
+  color: #222;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin: 12px 0;
+  transition: background 0.3s;
+}
+
+.menu-box button:hover {
+  background-color: #eab308; /* amarelo escurecido */
+}
+
+/* BOTÃO DE LOGOUT */
+.logout {
+  background-color: #ff4444 !important; /* vermelho forte */
+  color: white !important;
+}
+
+.logout:hover {
+  background-color: #d60000 !important;
+}
+
+/* Rodapé opcional para manter o padrão do login */
+footer {
+  width: 100%;
+  background-color: #eab308;
+  color: black;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 50px;
+}

@@ -30,7 +30,16 @@ if ($result->num_rows === 1) {
     // Comparação simples da senha
     if ($senhaDigitada === $usuario["senha"]) {
 
-        // Login válido
+        // PEGAMOS O ID DO USUÁRIO DO BANCO
+        $user_id = $usuario["id"];
+
+        // 🔹 INICIAMOS A SESSÃO
+        session_start();
+        
+        // 🔹 SALVAMOS O ID DO USUÁRIO NA SESSÃO
+        $_SESSION['user_id'] = $user_id;
+
+        // 🔹 REDIRECIONA PARA A ÁREA DO PACIENTE
         header("Location: ../paciente/dashboard.html");
         exit;
 

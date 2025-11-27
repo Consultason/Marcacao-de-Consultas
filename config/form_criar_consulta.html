@@ -1,56 +1,96 @@
-<!doctype html>
+<!doctype html> 
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <title>Marcar Consulta</title>
 
-  <!-- Arquivo CSS separado -->
+  <!-- Importa o arquivo CSS externo responsável pelo estilo da página -->
   <link rel="stylesheet" href="marcar_consulta.css">
 </head>
 <body>
 
-<header>
+<!-- Cabeçalho da página contendo a logo e o título -->
+
+
+<!-- Conteúdo principal da página -->
+<main>
+
+    <!-- Container do formulário -->
+    <section class="form-container">
+
+        
     <div class="logo">
+
+        <!-- Imagem da logo da clínica -->
         <img src="logotipo.png" alt="Logo da Clínica Bem Nordeste">
+
+        <!-- Título principal da página -->
         <h1>Marcar Consulta</h1>
     </div>
-</header>
 
-<main>
-    <section class="form-container">
+
+        <!-- Subtítulo orientando o usuário -->
         <h2>Preencha os dados da consulta</h2>
 
+        <!-- Formulário que envia os dados para o arquivo criar_consulta.php -->
         <form method="post" action="criar_consulta.php">
 
+            <!-- Campo de especialidade com datalist -->
             <div class="form-group">
                 <label>Especialidade:</label>
-                <input name="especialidade" required>
+
+                <!-- Input com lista de opções pré-definidas -->
+                <input name="especialidade" list="especialidades" required>
+                
+                <!-- Lista de especialidades (datalist) -->
+                <datalist id="especialidades">
+                    <option value="Cardiologia">
+                    <option value="Clínico Geral">
+                    <option value="Dermatologia">
+                    <option value="Endocrinologia">
+                    <option value="Gastroenterologia">
+                    <option value="Ginecologia">
+                    <option value="Neurologia">
+                    <option value="Oftalmologia">
+                    <option value="Ortopedia">
+                    <option value="Pediatria">
+                    <option value="Psiquiatria">
+                    <option value="Reumatologia">
+                    <option value="Urologia">
+                </datalist>
             </div>
 
+            <!-- Campo para escolher a data -->
             <div class="form-group">
                 <label>Data da Consulta:</label>
                 <input type="date" name="data_consulta" required>
             </div>
 
+            <!-- Campo para escolher a hora -->
             <div class="form-group">
                 <label>Hora da Consulta:</label>
                 <input type="time" name="hora_consulta" required>
             </div>
 
+            <!-- Campo opcional de observações -->
             <div class="form-group">
                 <label>Observações:</label>
                 <textarea name="observacoes" rows="4"></textarea>
             </div>
 
+            <!-- Botão de envio do formulário -->
             <button type="submit">Marcar Consulta</button>
         </form>
 
+        <!-- Link para retornar à página de consultas -->
         <p style="text-align:center; margin-top:15px;">
             <a href="minhas_consultas.php">Voltar para Minhas Consultas</a>
         </p>
+        
     </section>
 </main>
 
+<!-- Rodapé da página -->
 <footer>
     Clínica Bem Nordeste — Sistema de Marcação de Consultas
 </footer>

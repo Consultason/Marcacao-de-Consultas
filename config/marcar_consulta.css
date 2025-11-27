@@ -36,13 +36,14 @@ main {
     width: 100%;
 }
 
-.form-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
+.container {
+  background-color: #ffffff; /* fundo branco do card */
+  border-radius: 50px; /* cantos arredondados */
+  padding: 40px 50px; /* espaçamento interno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra leve para destaque */
+  text-align: center; /* centraliza o conteúdo */
+  width: 500px; /* largura fixa do card */
+  position: relative
 }
 
 h1, h2 {

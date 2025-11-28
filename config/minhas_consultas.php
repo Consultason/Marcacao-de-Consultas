@@ -92,7 +92,7 @@ $res = $stmt->get_result(); // Obtém resultados
 </main>
 
 <footer>
-    Clínica Bem Nordeste — Sistema de Marcação de Consultas
+    <p>&copy; Clínica BemNordeste</p>
 </footer>
 
 </body>

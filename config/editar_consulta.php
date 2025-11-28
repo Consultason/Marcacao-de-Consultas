@@ -55,6 +55,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     </form>
     <p><a href="minhas_consultas.php">Voltar</a></p>
     </main>
+
+    <footer>
+        <p>&copy; Clínica BemNordeste</p>
+    </footer>
 </body>
 </html>
     <?php

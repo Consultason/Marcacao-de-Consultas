@@ -3,30 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Área do Paciente</title>
+
+    <!-- Arquivo de estilos da área do paciente -->
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
 
 <main>
-    <div class="menu-box">
-        
-        
-    <div class="logo">
-        <h1>Área do Paciente</h1>
-    </div>
+    <div class="container">
 
+        <div class="logo">
+        <!-- logotipo e o nome da clínica -->
+        <img src="logotipo.png" alt="Logotipo da Clínica BemNordeste">
+        <h1>Cuidando da sua saúde com o calor e a força do Nordeste</h1>
+      </div>
 
+        <!-- Título da página dentro da caixa -->
+        <div class="logo">
+            <h2>Área do Paciente</h2>
+        </div>
+
+        <!-- Botão que leva ao formulário de marcação de consulta -->
         <button onclick="window.location.href='../config/form_criar_consulta.html'">
-    Marcar Consulta
-</button>
+            Marcar Consulta
+        </button>
+
+        <!-- Botão que leva às consultas agendadas -->
         <button onclick="window.location.href='../config/minhas_consultas.php'">
-    Ver Minhas Consultas
-</button>
+            Ver Minhas Consultas
+        </button>
+
+        <!-- Botão para voltar à página inicial do sistema -->
         <button onclick="voltarInicio()">Voltar à Página Inicial</button>
+
+        <!-- Botão de logout -->
         <button class="logout" onclick="logout()">Sair</button>
+
     </div>
 </main>
 
+<!-- Script com funções da página -->
 <script src="dashboard.js"></script>
+
+<!-- Rodapé da página (adicionado conforme solicitado) -->
+<footer>
+    Clínica Bem Nordeste — Sistema de Marcação de Consultas
+</footer>
 </body>
 </html>

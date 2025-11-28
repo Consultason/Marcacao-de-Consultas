@@ -38,24 +38,39 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex: 1; /* para ocupar o espaço disponível */
 }
 
-/* Caixa do menu (igual ao estilo do container do login) */
-.menu-box {
-  background-color: white;
-  width: 450px;
-  padding: 40px;
-  border-radius: 40px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+/* Caixa branca do formulário */
+.container{
+  background-color: #ffffff; /* fundo branco do card */
+  border-radius: 50px; /* cantos arredondados */
+  padding: 40px 50px; /* espaçamento interno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra leve para destaque */
+  text-align: center; /* centraliza o conteúdo */
+  width: 500px; /* largura fixa do card */
 }
 
-/* Logo ou título interno */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* organiza a logo e o texto verticalmente */
+}
+
+.logo img {
+  width: 350px;
+  margin-bottom: 20px;
+  /* define o tamanho da imagem da logo */
+}
+
 .logo h1 {
   font-size: 22px;
-  font-weight: 700;
   color: #1e73be;
-  margin-bottom: 30px;
+  align-items: center;
+  font-weight: 700;
+  /* título principal da logo */
 }
 
 /* Botões */
@@ -85,4 +100,20 @@ button:hover {
 
 .logout:hover {
   background-color: #d93636;
+}
+
+/* Título centralizado */
+h2{color: #1e73be;
+  text-align:center;
+   margin-top: 25px; /* controle do espaço */
+}
+
+
+footer {
+    width: 100%;
+    background-color: #eab308;
+    color: black;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 30px;
 }

@@ -20,8 +20,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     // Mostrar formulário preenchido
     ?>
-    <!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Editar Consulta</title></head><body>
+    <!doctype html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Editar Consulta</title>
+
+        <!-- Importa o arquivo CSS externo responsável pelo estilo da página -->
+  <link rel="stylesheet" href="marcar_consulta.css">
+    </head>
+    <body>
+
+    <main>
+<!-- Container do formulário -->
+    <section class="container">
+
+<div class="logo">
+
+        <!-- Imagem da logo da clínica -->
+        <img src="logotipo.png" alt="Logo da Clínica Bem Nordeste">
+</div>
+
     <h1>Editar Consulta</h1>
+
+    <div class="form-group">
+
     <form method="post" action="editar_consulta.php">
       <input type="hidden" name="id" value="<?= e($row['id']) ?>">
       <label>Especialidade:<br><input name="especialidade" value="<?= e($row['especialidade']) ?>" required></label><br><br>
@@ -31,7 +54,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
       <button type="submit">Salvar</button>
     </form>
     <p><a href="minhas_consultas.php">Voltar</a></p>
-    </body></html>
+    </main>
+</body>
+</html>
     <?php
     exit;
 }

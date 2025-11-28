@@ -33,6 +33,7 @@ body{
 
 /* Caixa branca do formulário */
 .container{
+  margin-top:20px; ;
   background-color: #ffffff; /* fundo branco do card */
   border-radius: 50px; /* cantos arredondados */
   padding: 40px 50px; /* espaçamento interno */

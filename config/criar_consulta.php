@@ -33,7 +33,7 @@ if (!empty($errors)) {
     exit;
 }
 
-// 4) (Opcional) prevenir horários duplicados para o mesmo usuário
+// 4) prevenir horários duplicados para o mesmo usuário
 $stmt = $conn->prepare("SELECT COUNT(*) AS c FROM consultas WHERE user_id = ? AND data_consulta = ? AND hora_consulta = ?");
 $stmt->bind_param("iss", $user_id, $data_consulta, $hora_consulta);
 $stmt->execute();
